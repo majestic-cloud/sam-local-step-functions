@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  sam-sf
+
+  Demo function used during the demonstration of running Step Functions locally
+
+Globals:
+  Function:
+    Timeout: 3
+
+Resources:
+  HelloFromLocalStepFunctions:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: hellosf/
+      Handler: app.lambdaHandler
+      Runtime: nodejs8.10
+
+Outputs:
+  HelloFromLocalStepFunctions:
+    Description: "Hello local Step Function execution"
+    Value: !GetAtt HelloFromLocalStepFunctions.Arn
