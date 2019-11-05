@@ -1,14 +1,14 @@
-##Just a short little demo running Step Functions locally
+## Just a short little demo running Step Functions locally
 
 - link to AWS documentation on running step functions locally https://docs.aws.amazon.com/step-functions/latest/dg/sfn-local.html
 
 
-###Prerequisites
+### Prerequisites
 
 - you need AWS CLI installed
 - you need AWS SAM CLI installed
 
-###Modify your parameters
+### Modify your parameters
 
 Look at the following files and edit them according to your setup:
 
